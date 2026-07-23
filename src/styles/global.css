@@ -15,7 +15,7 @@ header {
                 font-weight: 600;
                 color: #c92071;
                 margin-bottom: 2px;
-                
+
             }
         }
     }
@@ -31,11 +31,14 @@ main {
     form {
         width: 315px;
         background: #fff;
-        margin:0 auto;
+        margin: 0 auto;
         border-radius: 4px;
         padding: 30px;
 
-        p, .inputs, span, button {
+        p,
+        .inputs,
+        span,
+        button {
             margin-bottom: 30px;
         }
 
@@ -44,99 +47,169 @@ main {
             line-height: 34px;
             letter-spacing: 2px;
             text-align: center;
-    }
-
-    p {
-        font-size: 14px;
-        line-height: 24px;
-        letter-spacing: .25px;
-        text-align: center;
-        color: #474747;
-    
-
-        a {
-            display: inline;
-            text-decoration: underline;
-            color: inherit;
         }
-    }
 
-    .inputs {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
+        p {
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: .25px;
+            text-align: center;
+            color: #474747;
 
-        div {
-            label {
-                font-size: 12px;
-                font-weight: 700;
-                line-height: 24px;
-                letter-spacing: .75px;
+
+            a {
+                display: inline;
+                text-decoration: underline;
+                color: inherit;
+            }
+        }
+
+        .inputs {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            div {
+                label {
+                    font-size: 12px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    letter-spacing: .75px;
+                    color: #474747;
+                    margin-bottom: 5px;
+                }
+
+                input {
+                    height: 60px;
+                    font-size: 16px;
+                    line-height: 28px;
+                    letter-spacing: .75px;
+                    padding: 0px 12px;
+                    border: none;
+                    width: 100%;
+                    background-color: #4747470a;
+                    border-radius: 8px;
+                    outline-color: #c92071;
+                    padding-bottom: 2px;
+
+                    &::placeholder {
+                        color: #999;
+
+                    }
+                }
+            }
+        }
+
+        span {
+            a {
+                font-size: 14px;
+                line-height: 22px;
+                letter-spacing: .25px;
                 color: #474747;
-                margin-bottom: 5px;
+                border-bottom: solid .5px #474747;
+                width: fit-content;
+            }
+        }
+
+        button {
+            width: 100%;
+            height: 48px;
+            border-radius: 8px;
+            border: none;
+            background-color: #c92071;
+            color: #f5f5f5;
+            line-height: 24px;
+            font-weight: 600;
+            padding-bottom: 2px;
+        }
+
+        .others {
+            width: fit-content;
+            margin: 0 auto;
+
+            span {
+                font-size: 14px;
+                line-height: 22px;
+                letter-spacing: .25px;
+                color: #474747;
+                margin-bottom: 20px;
             }
 
-            input {
-                height: 60px;
-                font-size: 16px;
-                line-height: 28px;
-                letter-spacing: .75px;
-                padding: 0px 12px;
-                border: none;
-                width: 100%;
-                background-color: #4747470a;
-                border-radius: 8px;
-                outline-color: #c92071;
-                padding-bottom: 2px;
-                
-                &::placeholder {
-                    color: #999;
-
+            nav {
+                ul {
+                    display: flex;
+                    justify-content: center;
+                    gap: 24px;
                 }
             }
         }
     }
-    span {
-        a {
-            font-size: 14px;
-            line-height: 22px;
-            letter-spacing: .25px;
-            color: #474747;
-            border-bottom: solid .5px #474747;
-            width: fit-content;
-        }
+}
+
+footer {
+    background-color: #1f1f1f;
+    padding: 50px 20px 45px;
+
+    * {
+        color: #fff;
     }
 
-    button {
-        width: 100%;
-        height: 48px;
-        border-radius: 8px;
-        border: none;
-        background-color: #c92071;
-        color: #f5f5f5;
-        line-height: 24px;
-        font-weight: 600;
-        padding-bottom: 2px;
-    }
+    div {
+        .social {
+            margin-bottom: 40px;
 
-    .others {
-        width: fit-content;
-        margin: 0 auto;
+            nav {
+                margin-bottom: 20px;
 
-        span {
-            font-size: 14px;
-            line-height: 22px;
-            letter-spacing: .25px;
-            color: #474747;
-            margin-bottom: 20px;
-        }
+                a {
+                    display: flex;
+                    gap: 5.5px;
+                    align-items: center;
 
-        nav {
-            ul {
-                display: flex;
-                justify-content: center;
-                gap: 24px;
+                    span {
+                        font-size: 24.5px;
+                        font-weight: 600;
+                        margin-bottom: 4px;
+                    }
+                }
             }
+
+            p {
+                font-size: 14px;
+                line-height: 22px;
+                letter-spacing: .25px;
+                width: 307px;
+                margin-bottom: 30px;
+            }
+
+            nav {
+                ul {
+                    display: flex;
+                    align-items: center;
+                    gap: 35px;
+                }
+            }
+        }
+
+        .more {
+            display: flex;
+            gap: 32px;
+            margin-bottom: 10px;
+
+            h2 {
+                font-size: 18px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+
+            ul {
+                li {
+                    a {
+                        line-height: 31px;
+                    }
+                }
+            }
+
         }
     }
 }
