@@ -152,6 +152,7 @@ footer {
 
     * {
         color: #fff;
+        font-style: normal;
     }
 
     div {
@@ -211,5 +212,42 @@ footer {
             }
 
         }
+
+        .contact {
+            margin-bottom: 40px;
+
+            h2 {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+
+            address {
+                width: 270px;
+                margin-bottom: 31px;
+
+                a {
+                    line-height: 31px;
+                }
+            }
+
+            span {
+                a {
+                    line-height: 31px;
+                }
+            }
+        }
+
+
+    }
+
+    hr {
+        border-color: #ffffff4d;
+        margin-bottom: 23px;
+    }
+
+    small {
+        font-size: 12px;
+        text-align: center;
+        line-height: 24px;
     }
 }
